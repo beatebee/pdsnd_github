@@ -4,14 +4,14 @@
 Include the date you created this project and README file.
 
 ### Project Title
-Replace the Project Title
+Bikeshare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project reads and analyses data from bikeshare ventures in 3 US cities. It presents information on travel times, location and personal data of users. The user is able to filter the data output by month and day of the week. The user will also be given the opportunity to view raw data.
 
 ### Files used
-Include the files used
+The python file that needs to be run to do the data analysis: bikeshare.py
+The data files that contain the raw data: chicago.csv, new_york_city.csv, washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+This code is inspired by a project given by Udactiy as part of the course 
