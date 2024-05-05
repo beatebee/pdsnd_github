@@ -78,7 +78,7 @@ def load_data(city, month, day):
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     Returns:
-        df - Pandas DataFrame containing raw city data 
+        df - Pandas DataFrame containing raw bikeshare data for specified city
     """
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
