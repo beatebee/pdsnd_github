@@ -18,6 +18,6 @@ These files need to be saved in the same folder.
 
 ### Credits
 This code is inspired by a project given by Udactiy as part of the course 'Programming for Data Science with Python'. Information on the following websites was used to solve the project:
-Pandas Documentation: https://pandas.pydata.org/docs/index.html
-Stack Overflow: https://stackoverflow.com/
-Geeks For Geeks: https://www.geeksforgeeks.org/
+* Pandas Documentation: https://pandas.pydata.org/docs/index.html
+* Stack Overflow: https://stackoverflow.com/
+* Geeks For Geeks: https://www.geeksforgeeks.org/
