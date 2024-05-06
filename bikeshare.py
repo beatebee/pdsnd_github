@@ -89,7 +89,7 @@ def load_data(city, month, day):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.dayofweek
     df['start_hour'] = df['Start Time'].dt.hour
-    df['route'] = df['Start Station'] + " to " + df['End Station']
+    df['trip'] = df['Start Station'] + " to " + df['End Station']
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
@@ -162,16 +162,16 @@ def station_stats(df):
     # display most commonly used start station
     common_ststation = df['Start Station'].mode()[0]
     print('The most popular start station was {}'.format(common_ststation))
-    print()
+    #print()
 
     # display most commonly used end station
     common_endstation = df['End Station'].mode()[0]
-    print('The most popular end station was {}'.format(common_endstation))
-    print()
+    print('\nThe most popular end station was {}'.format(common_endstation))
+    #print()
 
     # display most frequent combination of start station and end station trip
-    common_route = df['route'].mode()[0]
-    print('The most frequent trip from start to end was {}'.format(common_route))
+    common_route = df['trip'].mode()[0]
+    print('\nThe most frequent trip from start to end was {}'.format(common_route))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -254,7 +254,7 @@ def user_stats(df, city):
 def raw_data(df):
 
     answer = " "
-    derived_columns = ['month', 'day_of_week', 'start_hour', 'route']
+    derived_columns = ['month', 'day_of_week', 'start_hour', 'trip']
 
     while answer != 'yes' and answer != 'no':
         try:
